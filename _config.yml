@@ -1,0 +1,31 @@
+name: Your Name
+bio: A brief description of yourself
+email: your.email@example.com
+url: https://your-username.github.io
+twitter_username: your_twitter_username
+github_username: your_github_username
+
+# Navigation links
+nav:
+  - title: About
+    url: /about/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Pagination
+paginate: 5
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
