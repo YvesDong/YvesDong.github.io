@@ -1,1 +1,23 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.name }}</title>
+  </head>
+  <body>
+    <h1>{{ site.name }}</h1>
+    <p>{{ site.bio }}</p>
+
+    <h2>Publications</h2>
+    {% for publication in site.publications %}
+      <h3>{{ publication.title }}</h3>
+      <p>{{ publication.author }} - {{ publication.date | date: "%B %d, %Y" }}</p>
+      <p>{{ publication.description }}</p>
+    {% endfor %}
+
+    <h2>Projects</h2>
+    {% for project in site.projects %}
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+    {% endfor %}
+  </body>
+</html>
